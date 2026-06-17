@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Climatizador TS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>🌤️ El Climatizador</h1>
+      <p class="subtitle">Laboratorio de TypeScript Vanilla</p>
+
+      <form id="weather-form">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Ej. Madrid, Bogotá, Tokyo..."
+          required
+        />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div id="weather-card" class="card hidden">
+        <h2 id="city-name">Ciudad</h2>
+        <img id="weather-icon" src="" alt="Icono del clima" />
+        <p id="temperature" class="temp">--°C</p>
+        <p id="condition">Condición</p>
+        <div class="details">
+          <span>💧 Humedad: <strong id="humidity">--%</strong></span>
+        </div>
+      </div>
+
+      <p id="error-message" class="error hidden"></p>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
